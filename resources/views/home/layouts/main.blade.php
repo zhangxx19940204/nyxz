@@ -229,51 +229,51 @@ $url_html = "";
 
 {{--判定设备类型--}}
 <script>
-    //平台、设备和操作系统
-
-    let system = {
-
-        win: false,
-
-        mac: false,
-
-        xll: false,
-
-        ipad: false
-
-    };
-
-    //检测平台
-
-    let p = navigator.platform;
-    console.log(p);
-
-    system.win = p.indexOf("Win") == 0;
-
-    system.mac = p.indexOf("Mac") == 0;
-
-    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-
-    system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
-    if (system.win || system.mac || system.xll || system.ipad) {
-
-    } else {
-
-        window.location.href = "/mobile";//切换到手机页面
-
-    }
+    // //平台、设备和操作系统
+    //
+    // let system = {
+    //
+    //     win: false,
+    //
+    //     mac: false,
+    //
+    //     xll: false,
+    //
+    //     ipad: false
+    //
+    // };
+    //
+    // //检测平台
+    //
+    // let p = navigator.platform;
+    // console.log(p);
+    //
+    // system.win = p.indexOf("Win") == 0;
+    //
+    // system.mac = p.indexOf("Mac") == 0;
+    //
+    // system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //
+    // system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
+    // if (system.win || system.mac || system.xll || system.ipad) {
+    //
+    // } else {
+    //
+    //     window.location.href = "/mobile";//切换到手机页面
+    //
+    // }
 </script>
 <!-- 53 -->
 
 
 <script>
-    var _hmt = _hmt || [];
-    (function() {
-        let hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?6b71b80cfa80192f6c24d5f32783c30e";
-        let s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+    // var _hmt = _hmt || [];
+    // (function() {
+    //     let hm = document.createElement("script");
+    //     hm.src = "https://hm.baidu.com/hm.js?6b71b80cfa80192f6c24d5f32783c30e";
+    //     let s = document.getElementsByTagName("script")[0];
+    //     s.parentNode.insertBefore(hm, s);
+    // })();
 </script>
 
 </html>
