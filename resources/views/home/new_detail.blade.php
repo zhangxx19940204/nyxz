@@ -70,7 +70,7 @@
         .news_box {
             border: 5px solid #000;
             padding: 30px;
-            width: 1172px;
+            width: auto;
             box-sizing: border-box;
             margin: 0 auto;
             /*color: #fff;*/
@@ -80,7 +80,12 @@
             line-height: 64px;
             font-size: 36px;
         }
-
+        .tab {
+            padding: 15px;
+        }
+        .turn {
+            padding: 15px;
+        }
 
     </style>
     <div class="main_box">
@@ -96,7 +101,9 @@
             <div class="news_box">
                 <h1 class="news_title">{{$new_detail->title}}</h1>
                 <div class="newsText">
-                    <p><?php echo html_entity_decode($new_detail->content, 1);?></p>
+
+                    <div><?php echo html_entity_decode($new_detail->content, 1);?></div>
+
                 </div>
 {{--                <div class="btn_box">--}}
 {{--                    <div class="btn">--}}
