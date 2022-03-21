@@ -29,6 +29,9 @@
         .join_ico_words a {
             color: #2cae58;
         }
+        .join_ico_words {
+            color: #2cae58;
+        }
         @media (min-width: 768px) {
             .layout-bordered-item {
                 flex-basis: 33.333%;
@@ -57,9 +60,9 @@
 
                         <section class="section section-lg text-center" style="width: max-content;">
                             <div class="container">
-                                <h3 class="wow-outer"><span class="wow slideInUp">合作电话：400-998-5757</span></h3>
+                                <h3 class="wow-outer"><span class="wow slideInUp join_ico_words">合作电话：400-998-5757</span></h3>
                                 <hr>
-                                <h3 class="wow-outer"><span class="wow slideInUp">合作优势</span></h3>
+                                <h3 class="wow-outer"><span class="wow slideInUp join_ico_words">合作优势</span></h3>
 
                                 <section class="section section-sm">
                                     <div class="container">
