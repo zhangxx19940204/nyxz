@@ -47,6 +47,7 @@
             font-size: 28px;
             font-weight: 600;
             color: #2cae58;
+            margin-top: -30px;
         }
         .home_online_message_ico {
             text-align: center;
@@ -144,7 +145,7 @@
 
         .productIndex .pro_2 {
             position: absolute;
-            background: url(/static/home/images/home_pro/pr_back_2.png) center no-repeat;
+            /*background: url(/static/home/images/home_pro/pr_back_2.png) center no-repeat;*/
             height: 850px;
             width: 100%;
             z-index: 1;
@@ -162,6 +163,7 @@
             width: 1200px;
             margin: auto;
             padding-top: 300px;
+
         }
 
         .productIndex .pro_2 .pro_2_con .pro_2_left {
@@ -256,7 +258,12 @@
             margin-top: 0;
         }
 
-
+        .home_video_img {
+            margin-top: 50px;
+        }
+        .pro_2 {
+            background-color: #2cae58;
+        }
 
     </style>
 
@@ -270,7 +277,7 @@
             <div class="row row-50 justify-content-lg-between flex-lg-row-reverse offset-top-1">
                 <div class="col-lg-7 col-xl-6">
                     <div class="heading-decorate-wrap">
-                        <h3 class="heading-decorate"><span class="heading-decorate-symbol font-weight-ubold">F</span><span class="heading-decorate-main" style="color:#2cae58;">顶级大咖·伊利乳业</span></h3>
+                        <h3 class="heading-decorate"><span class="heading-decorate-symbol font-weight-ubold">F</span><span class="heading-decorate-main" style="color:#2cae58;">顶级大咖·伊利乳业</span><span style="font-size: x-large;color: #2cae58;margin-left: 80px;">——现调活菌酸奶饮</span></h3>
                         <!-- Bootstrap collapse-->
                         <div class="card-group-custom card-group-corporate wow-outer" id="accordion2" role="tablist" aria-multiselectable="false"><!--Bootstrap card-->
                             <article class="card card-custom wow fadeInDown" data-wow-delay=".05s">
@@ -281,7 +288,14 @@
                                 </div>
                                 <div class="collapse show" id="accordion2-card-body-lxekxbgl" aria-labelledby="accordion2-card-head-fkfutyjm" data-parent="#accordion2" role="tabpanel">
                                     <div class="card-body">
-                                        <p>奶优小站，起源于全球乳业知名品牌 —— <br/>—— 伊利乳业。百亿级乳业大咖玩转市场，<br/>携满级营销大号牛刀入市，<br/>降维打击。</p>
+                                        <p>奶优小站，原料来自于全球乳业知名品牌——伊利乳业。<br/>
+                                            百亿级乳业大咖玩转市场，携满级营销大号牛刀入市，降维打击。<br/>
+
+                                            品牌核心价值点：奶源优、口味多、负担小、客源广<br/>
+                                            超强基因：伊利天然牧场特供的优质奶源，更专业的技术，更放心的品质。<br/>
+                                            口味创新：9大系列，几十款产品，涵盖酸奶、鲜奶、乳酸菌等多个品类，满足市场需求，男女老少都爱喝，客源更广。<br/>
+                                            市场趋势：人手一杯的酸奶饮品，健康好喝无负担，自带流量。<br/>
+                                        </p>
                                     </div>
                                 </div>
                             </article>
@@ -304,8 +318,8 @@
         <div class="pro_1">
             <div class="pro_1_con">
                 <div class="pro_1_left wow" style="visibility: visible;animation-delay:0.1s; animation-name: fadeInLeft">
-                    <div class="title">杨枝甘露</div>
-                    <div class="intro">精选⼩台农芒果、红⻄柚果粒、泰国⼩⻄⽶铺于杯底，搭配浓⾹椰浆，酸甜清爽丝毫不腻。</div>
+                    <div class="title">紫水晶酸奶</div>
+                    <div class="intro">精选优质酸奶</div>
                 </div>
                 <div class="pro_1_right">
                     <div class="pro_11 wow" style="visibility: visible;animation-delay:0.3s; animation-name:rotateInDownRight "><img src="/static/home/images/home_pro/pr_b_11.png"></div>
@@ -322,8 +336,8 @@
                     <img src="/static/home/images/home_pro/20210621112259_57969.png" class="p_img wow" style="visibility: visible;animation-delay:0.2s; animation-name: bounceInLeft;width:445px;">
                 </div>
                 <div class="pro_2_ritht wow" style="visibility: visible;animation-delay:0.1s; animation-name: flipInX">
-                    <div class="title">豆乳玉麒麟</div>
-                    <div class="intro">精选武夷山名丛玉麒麟做茶底，加上咸甜芝士和特磨黄豆粉，茶味浓郁，豆乳香醇，口感甜而不腻。</div>
+                    <div class="title">紫水晶酸奶</div>
+                    <div class="intro">精选优质酸奶</div>
                 </div>
             </div>
             <div class="pro_2_back wow" style="visibility: visible;animation-delay:0.8s; animation-name: slideInRight "><img src="/static/home/images/home_pro/pr_b_2.png"></div>
@@ -335,8 +349,8 @@
                 <div class="pro_3_left">
                     <div class="left_top wow" style="visibility: visible;animation-delay:1s; animation-name: fadeInDown "><img src="/static/home/images/home_pro/pr_b_31.png"></div>
                     <div class="left_con">
-                        <div class="title">超级杯水果茶</div>
-                        <div class="intro">1L 装超⼤杯⽔果茶，加⼊多种⽔果，饱满果⾁搭配清新茉绿茶底，每⼀⼝都暗藏惊喜。</div>
+                        <div class="title">紫水晶酸奶</div>
+                        <div class="intro">精选优质酸奶</div>
                     </div>
                 </div>
                 <div class="pro_3_right">
@@ -355,7 +369,10 @@
                 <div class="col-md-12 col-lg-12 col-xxl-12">
                     <div class="heading-decorate-wrap" style="text-align: center;">
 
-
+                        <div class="home_news_ico">
+                            <p>合作流程</p>
+                            <span>Cooperation process</span>
+                        </div>
 {{--                        <div class="row">--}}
 {{--                            <div class="col">--}}
 {{--                                <ul class="list-group list-group-horizontal li_stand">--}}

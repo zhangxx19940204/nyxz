@@ -119,7 +119,7 @@
                             <section class="section section-lg text-center">
                                 <div class="container">
 
-                                    <img src="/static/home/images/join_condition_table.png" />
+                                    <img src="/static/home/images/join_profit.png" />
                                 </div>
                                 {{--                        <h3 class="wow-outer"><span class="wow slideInUp">集成装修物资按30平方计，具体根据实际情况测算</span></h3>--}}
                                 {{--                        <div class="wow-outer button-outer"><a class="button button-lg button-primary-outline button-winona wow slideInUp" href="careers.html">View all Job Positions</a></div>--}}
@@ -158,8 +158,8 @@
                             {{--选址条件--}}
                             <section class="section section-lg text-center">
                                 <div class="container">
-                                    <h3 class="wow-outer"><span class="wow slideInUp">店面模式对应的服务模式、环境模式、工程条件</span></h3>
-                                    <img src="/static/home/images/join_condition_table.png" />
+{{--                                    <h3 class="wow-outer"><span class="wow slideInUp">店面模式对应的服务模式、环境模式、工程条件</span></h3>--}}
+                                    <img src="/static/home/images/join_location.png" />
                                 </div>
                                 {{--                        <div class="wow-outer button-outer"><a class="button button-lg button-primary-outline button-winona wow slideInUp" href="careers.html">View all Job Positions</a></div>--}}
                             </section>
