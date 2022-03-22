@@ -61,6 +61,203 @@
         /*}*/
 
 
+        /*首页产品*/
+        .productIndex {
+            width: 100%;
+            position: relative;
+            height: 2310px;
+            min-width: 1200px;
+            overflow: hidden;
+        }
+
+        .productIndex .pro_1 {
+            background: url(/static/home/images/home_pro/pr_back_1.png) center no-repeat;
+            height: 850px;
+            position: absolute;
+            width: 100%
+        }
+
+        .productIndex .pro_1 .pro_1_con {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .productIndex .pro_1 .pro_1_left {
+            float: left;
+            width: 310px;
+            margin-left: 52px;
+            text-align: center;
+            color: #9f7a54;
+            margin-top: 360px;
+        }
+
+        .productIndex .pro_1 .pro_1_left .title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .productIndex .pro_1 .pro_1_left .intro {
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 30px;
+        }
+
+        .productIndex .pro_1 .pro_1_right {
+            float: right;
+            width: 780px;
+            text-align: center;
+            position: relative;
+        }
+
+        .productIndex .pro_1 .pro_11 {
+            position: absolute;
+            top: 140px;
+            left: -90px;
+        }
+
+        .productIndex .pro_1 .pro_12 {
+            position: absolute;
+            top: 65px;
+            left: 295px;
+            z-index: 0
+        }
+
+        .productIndex .pro_1 .pro_13 {
+            position: absolute;
+            top: 85px;
+            right: -80px;
+        }
+
+        .productIndex .pro_1 .p_img {
+            position: absolute;
+            z-index: 1;
+            left: 130px;
+            top: 180px;
+            transition: 0.5s
+        }
+
+        .productIndex .pro_1 .p_img:hover {
+            top: 130px;
+        }
+
+        .productIndex .pro_2 {
+            position: absolute;
+            background: url(/static/home/images/home_pro/pr_back_2.png) center no-repeat;
+            height: 850px;
+            width: 100%;
+            z-index: 1;
+            top: 610px;
+            overflow: hidden;
+        }
+
+        .productIndex .pro_2 .pro_2_back {
+            position: absolute;
+            bottom: 0;
+            right: 0
+        }
+
+        .productIndex .pro_2 .pro_2_con {
+            width: 1200px;
+            margin: auto;
+            padding-top: 300px;
+        }
+
+        .productIndex .pro_2 .pro_2_con .pro_2_left {
+            float: left;
+        }
+
+        .productIndex .pro_2 .pro_2_con .pro_2_left img {
+            transition: 0.5s;
+        }
+
+        .productIndex .pro_2 .pro_2_con .pro_2_left:hover img {
+            margin-top: -50px;
+        }
+
+        .productIndex .pro_2 .pro_2_con .pro_2_ritht {
+            float: left;
+            width: 308px;
+            color: #fff;
+            text-align: center;
+            margin-top: 180px;
+            margin-left: 60px;
+        }
+
+        .productIndex .pro_2 .pro_2_con .pro_2_ritht .title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .productIndex .pro_2 .pro_2_con .pro_2_ritht .intro {
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 30px;
+            color: #e7e8f8
+        }
+
+        .productIndex .pro_3 {
+            background: url(/static/home/images/home_pro/pr_back_3.png) center no-repeat;
+            height: 850px;
+            width: 100%;
+            position: absolute;
+            bottom: 0
+        }
+
+        .productIndex .pro_3 .pro_3_con {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .productIndex .pro_3 .pro_3_left {
+            width: 310px;
+            text-align: center;
+            color: #999370;
+            float: left;
+        }
+
+        .productIndex .pro_3 .pro_3_left .left_con {
+            margin-top: 215px;
+        }
+
+        .productIndex .pro_3 .pro_3_left .title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 40px;
+        }
+
+        .productIndex .pro_3 .pro_3_left .intro {
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 30px;
+        }
+
+        .productIndex .pro_3 .pro_3_right {
+            float: right;
+            padding-top: 70px;
+            width: 530px;
+        }
+
+        .productIndex .pro_3 .pro_3_right .po_img {
+            float: right;
+        }
+
+        .productIndex .pro_3 .pro_3_right .p_img {
+            float: left;
+            margin-top: 45px;
+            transition: 0.5s;
+        }
+
+        .productIndex .pro_3 .pro_3_right .p_img:hover {
+            margin-top: 0;
+        }
+
+
+
     </style>
 
 
@@ -100,26 +297,56 @@
         </div>
     </section>
 
+{{--    首页  产品展示--}}
     <section class="section section-lg">
-        <div class="container">
-            <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
-                <div class="col-md-12 col-lg-12 col-xxl-12">
-                    <div class="heading-decorate-wrap">
-                        <div class="home_product_div1">
-                            <img src="/static/home/images/home_product_01.png" class="home_product_img1">
-                        </div>
-                        <div class="home_product_div2">
-                            <img src="/static/home/images/home_product_02.png" class="home_product_img2">
-                        </div>
-                        <div class="home_product_div3">
-                            <img src="/static/home/images/home_product_03.png" class="home_product_img3">
-                        </div>
-
-
-                    </div>
+{{--        <div class="container">--}}
+            <div class="productIndex">
+        <div class="pro_1">
+            <div class="pro_1_con">
+                <div class="pro_1_left wow" style="visibility: visible;animation-delay:0.1s; animation-name: fadeInLeft">
+                    <div class="title">杨枝甘露</div>
+                    <div class="intro">精选⼩台农芒果、红⻄柚果粒、泰国⼩⻄⽶铺于杯底，搭配浓⾹椰浆，酸甜清爽丝毫不腻。</div>
+                </div>
+                <div class="pro_1_right">
+                    <div class="pro_11 wow" style="visibility: visible;animation-delay:0.3s; animation-name:rotateInDownRight "><img src="/static/home/images/home_pro/pr_b_11.png"></div>
+                    <div class="pro_12 wow" style="visibility: visible;animation-delay:0.5s; animation-name:fadeInUp "><img src="/static/home/images/home_pro/pr_b_12.png"></div>
+                    <div class="pro_13 wow" style="visibility: visible;animation-delay:0.8s; animation-name: rotateInUpRight "><img src="/static/home/images/home_pro/pr_b_13.png"></div>
+                    <img src="/static/home/images/home_pro/20210207092914_75643.png" class="p_img wow" style="visibility: visible;animation-delay:0.2s; animation-name: zoomIn;width:445px;">
                 </div>
             </div>
         </div>
+        <div class="pro_2">
+
+            <div class="pro_2_con">
+                <div class="pro_2_left">
+                    <img src="/static/home/images/home_pro/20210621112259_57969.png" class="p_img wow" style="visibility: visible;animation-delay:0.2s; animation-name: bounceInLeft;width:445px;">
+                </div>
+                <div class="pro_2_ritht wow" style="visibility: visible;animation-delay:0.1s; animation-name: flipInX">
+                    <div class="title">豆乳玉麒麟</div>
+                    <div class="intro">精选武夷山名丛玉麒麟做茶底，加上咸甜芝士和特磨黄豆粉，茶味浓郁，豆乳香醇，口感甜而不腻。</div>
+                </div>
+            </div>
+            <div class="pro_2_back wow" style="visibility: visible;animation-delay:0.8s; animation-name: slideInRight "><img src="/static/home/images/home_pro/pr_b_2.png"></div>
+
+        </div>
+        <div class="pro_3">
+            <div class="pro_3_con">
+
+                <div class="pro_3_left">
+                    <div class="left_top wow" style="visibility: visible;animation-delay:1s; animation-name: fadeInDown "><img src="/static/home/images/home_pro/pr_b_31.png"></div>
+                    <div class="left_con">
+                        <div class="title">超级杯水果茶</div>
+                        <div class="intro">1L 装超⼤杯⽔果茶，加⼊多种⽔果，饱满果⾁搭配清新茉绿茶底，每⼀⼝都暗藏惊喜。</div>
+                    </div>
+                </div>
+                <div class="pro_3_right">
+                    <img src="/static/home/images/home_pro/20210621112357_90211.png" class="p_img wow" style="visibility: visible;animation-delay:0.2s; animation-name: fadeInUp;width:445px;">
+                    <img src="/static/home/images/home_pro/pr_b_32.png" class="po_img wow" style="visibility: visible;animation-delay:1s; animation-name: zoomIn">
+                </div>
+            </div>
+        </div>
+    </div>
+{{--        </div>--}}
     </section>
 
     <section class="section section-lg">
