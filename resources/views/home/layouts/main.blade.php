@@ -72,13 +72,13 @@ $url_html = "";
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap"><!-- RD Navbar Nav-->
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="/">首页</a></li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/brand">品牌介绍</a></li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/product">产品展示</a></li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/store">店面展示</a></li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/news">新闻中心</a></li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/join">品牌合作</a></li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/contacts">联系我们</a></li>
+                                        <li class="rd-nav-item @yield('home','')"><a class="rd-nav-link" href="/">首页</a></li>
+                                        <li class="rd-nav-item @yield('brand','')"><a class="rd-nav-link" href="/brand">品牌介绍</a></li>
+                                        <li class="rd-nav-item @yield('product','')"><a class="rd-nav-link" href="/product">产品展示</a></li>
+                                        <li class="rd-nav-item @yield('store','')"><a class="rd-nav-link" href="/store">店面展示</a></li>
+                                        <li class="rd-nav-item @yield('news','')"><a class="rd-nav-link" href="/news">新闻中心</a></li>
+                                        <li class="rd-nav-item @yield('join','')"><a class="rd-nav-link" href="/join">品牌合作</a></li>
+                                        <li class="rd-nav-item @yield('contacts','')"><a class="rd-nav-link" href="/contacts">联系我们</a></li>
                                     </ul>
                                 </div>
                             </div>

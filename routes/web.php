@@ -28,7 +28,7 @@ Route::group(['middleware' => ['page_info']], function () {
     // Route::get('/team', [home\HomeController::class,'team']);
     // Route::get('/message', [home\HomeController::class,'message']);
 
-    Route::get('/mobile', [home\HomeController::class,'mobile']);
+    // Route::get('/mobile', [home\HomeController::class,'mobile']);
 });
 
 

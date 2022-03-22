@@ -1,5 +1,6 @@
 @extends('home.layouts.main')
 
+@section('contacts', 'active')
 @section('content')
     <?php
     $url_html = "";

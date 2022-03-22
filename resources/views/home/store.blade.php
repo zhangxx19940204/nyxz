@@ -1,5 +1,6 @@
 @extends('home.layouts.main')
 
+@section('store', 'active')
 @section('content')
     <?php
     $url_html = "";
