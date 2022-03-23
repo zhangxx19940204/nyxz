@@ -363,6 +363,48 @@
 {{--        </div>--}}
     </section>
 
+{{--    首页 店面展示--}}
+    <section class="section section-lg" style="padding: 0px;">
+        <div class="container">
+            <div class="row row-50 row-xxl-70">
+
+                <div class="col-md-12 scaleFadeInWrap"><!-- Post Modern-->
+                    <div class="wow scaleFadeIn">
+                        <article class="post-modern post-modern-media">
+{{--                            <a class="post-modern-media" href="single-blog-post.html">--}}
+                                <img src="/static/home/images/home_store_01.png" alt="" width="571" height="353"/>
+{{--                            </a>--}}
+
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-6 scaleFadeInWrap"><!-- Post Modern-->
+                    <div class="wow scaleFadeIn">
+                        <article class="post-modern post-modern-media">
+{{--                            <a class="post-modern-media" href="single-blog-post.html">--}}
+                                <img src="/static/home/images/home_store_02.png" alt="" width="571" height="353"/>
+{{--                            </a>--}}
+
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-6 scaleFadeInWrap"><!-- Post Modern-->
+                    <div class="wow scaleFadeIn">
+                        <article class="post-modern post-modern-media">
+{{--                            <a class="post-modern-media" href="single-blog-post.html">--}}
+                                <img src="/static/home/images/home_store_03.png" alt="" style="height: 356px;width: 576px;" width="571" height="353"/>
+{{--                            </a>--}}
+
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
     <section class="section section-lg">
         <div class="container">
             <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
