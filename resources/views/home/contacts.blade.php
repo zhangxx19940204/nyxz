@@ -19,6 +19,7 @@
             font-weight: 600;
             color: #2cae58;
         }
+
     </style>
 
     <section class="section section-lg">
@@ -29,18 +30,23 @@
             </div>
 
             <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="inset-right-3" style="margin-left: 10%;">
+
+                <div class="col-lg-12">
+                    <div style="height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                </div>
+
+                <div class="col-lg-12 col-xl-12">
+                    <div class="inset-right-3">
 
                         <div class="col-md-12 col-lg-12">
-                            <h5 class="text-uppercase font-weight-bold">联系我们</h5>
-                            <hr>
-                            <ul class="list-sm">
+{{--                            <h5 class="text-uppercase font-weight-bold">联系我们</h5>--}}
+{{--                            <hr>--}}
+                            <ul class="list-sm" style="text-align: center;">
                                 <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">杭州市钱塘区下沙街道元成路199号 <br>
                                         龙驰智慧谷B座17楼</a></li>
                                 <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span>
                                     <ul class="list-0">
-                                        <li><a class="link-default" href="">400-998-5757</a></li>
+                                        <li><a class="link-default" href="tel:4009985757">400-998-5757</a></li>
                                     </ul>
                                 </li>
                                 <li class="object-inline"><span class="icon icon-md mdi mdi-email-outline text-gray-700"></span><a class="link-default" href="mailto:#">1852786950@qq.com</a></li>
@@ -49,9 +55,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
-                </div>
+
             </div>
 
         </div>

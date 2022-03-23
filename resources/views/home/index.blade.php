@@ -456,18 +456,23 @@
             </div>
 
             <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="inset-right-3" style="margin-left: 10%;">
+
+                <div class="col-lg-12">
+                    <div style="height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                </div>
+
+                <div class="col-lg-12 col-xl-12">
+                    <div class="inset-right-3">
 
                         <div class="col-md-12 col-lg-12">
-                            <h5 class="text-uppercase font-weight-bold">联系我们</h5>
-                            <hr>
-                            <ul class="list-sm">
+                            {{--                            <h5 class="text-uppercase font-weight-bold">联系我们</h5>--}}
+                            {{--                            <hr>--}}
+                            <ul class="list-sm" style="text-align: center;">
                                 <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">杭州市钱塘区下沙街道元成路199号 <br>
                                         龙驰智慧谷B座17楼</a></li>
                                 <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span>
                                     <ul class="list-0">
-                                        <li><a class="link-default" href="">400-998-5757</a></li>
+                                        <li><a class="link-default" href="tel:4009985757">400-998-5757</a></li>
                                     </ul>
                                 </li>
                                 <li class="object-inline"><span class="icon icon-md mdi mdi-email-outline text-gray-700"></span><a class="link-default" href="mailto:#">1852786950@qq.com</a></li>
@@ -476,9 +481,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
-                </div>
+
             </div>
 
         </div>
@@ -536,15 +539,29 @@
         window.onload = function () {  //事件处理函数
             console.log('页面加载完毕');
             $('.videoed').show();
+            let platform_code = judge_platform()
             $(".home_video_img").click(function(){ //这个视频被点击后执行
+                console.log(platform_code)
                 let video = $(this).attr('ipath');//获取视频路径
-                $('.videos').html("<video id=\"video\" style='width: 640px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"/static/home/images/gb.png\" width=\"25\" height=\"25\"/>");
-                $('.videos').show();
+                if (platform_code == '1'){
+                    //pc
+                    $('.videos').html("<video id=\"video\" style='width: 640px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"/static/home/images/gb.png\" width=\"25\" height=\"25\"/>");
+                    $('.videos').show();
+                }else{
+                    window.open(video,'_blank');
+                }
+
             });
             $(".videoed").click(function(){ //这个视频被点击后执行
+                console.log(platform_code)
                 let video = $(this).attr('ipath');//获取视频路径
-                $('.videos').html("<video id=\"video\" style='width: 640px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"/static/home/images/gb.png\" width=\"25\" height=\"25\"/>");
-                $('.videos').show();
+                if (platform_code == '1'){
+                    //pc
+                    $('.videos').html("<video id=\"video\" style='width: 640px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"/static/home/images/gb.png\" width=\"25\" height=\"25\"/>");
+                    $('.videos').show();
+                }else{
+                    window.open(video,'_blank');
+                }
             });
 
             //
@@ -630,11 +647,49 @@
         }
 
         function isPhoneAvailable(phone) {
-            var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+            let myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
             if (!myreg.test(phone)) {
                 return false;
             } else {
                 return true;
+            }
+        }
+
+        function judge_platform(){
+            //平台、设备和操作系统
+
+            let system = {
+
+                win: false,
+
+                mac: false,
+
+                xll: false,
+
+                ipad: false
+
+            };
+
+            //检测平台
+
+            let p = navigator.platform;
+            console.log(p);
+
+            system.win = p.indexOf("Win") == 0;
+
+            system.mac = p.indexOf("Mac") == 0;
+
+            system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+
+            system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
+            if (system.win || system.mac || system.xll || system.ipad) {
+                //pc
+                return 1;
+            } else {
+
+                //切换到手机页面
+                return 0;
+
             }
         }
 
