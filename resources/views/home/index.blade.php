@@ -44,8 +44,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5 wow-outer" >
-                    <img src="/static/home/images/play.png" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4" class="videoed"/>
-                    <img class="wow slideInLeft home_video_img" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4" src="/static/home/images/home_video_img.jpg" alt="" width="470" height="368" />
+                    <img src="/static/home/images/play.png" class="videoed"/>
+                    <img class="wow slideInLeft home_video_img" src="/static/home/images/home_video_img.jpg" alt="" width="470" height="368" />
                 </div>
                 <div class="videos"></div>
             </div>
@@ -344,7 +344,7 @@
             let platform_code = judge_platform()
             $(".home_video_img").click(function(){ //这个视频被点击后执行
                 console.log(platform_code)
-                let video = $(this).attr('ipath');//获取视频路径
+                let video = 'http://static.wintersweet.cn/nyxz/20220324_nyxz.mp4';//获取视频路径
                 if (platform_code == '1'){
                     //pc
                     $('.videos').html("<video id=\"video\" style='width: 640px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"/static/home/images/gb.png\" width=\"25\" height=\"25\"/>");
@@ -356,7 +356,7 @@
             });
             $(".videoed").click(function(){ //这个视频被点击后执行
                 console.log(platform_code)
-                let video = $(this).attr('ipath');//获取视频路径
+                let video = 'http://static.wintersweet.cn/nyxz/20220324_nyxz.mp4';//获取视频路径
                 if (platform_code == '1'){
                     //pc
                     $('.videos').html("<video id=\"video\" style='width: 640px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"/static/home/images/gb.png\" width=\"25\" height=\"25\"/>");
