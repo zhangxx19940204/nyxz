@@ -173,7 +173,7 @@
                 <div class="col-md-6 scaleFadeInWrap"><!-- Post Modern-->
                     <div class="wow scaleFadeIn">
                         <article class="post-modern post-modern-media">
-                                <img src="/static/home/images/home_store_02.png" alt="" width="571" height="353"/>
+                                <img src="/static/home/images/home_store_02.png" alt="" style="height: 356px;width: 576px;" width="571" height="353"/>
                         </article>
                     </div>
                 </div>
