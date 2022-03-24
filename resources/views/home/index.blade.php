@@ -7,6 +7,7 @@
     $url_query = "";
     ?>
     <link rel="stylesheet" type="text/css" href="/static/home/css/home_pro_mobile/style.css">
+    <script type="text/javascript" src="/static/home/js/home_pro_mobile/common.js"></script>
 
 
     <section class="section section-lg" style="color:#2cae58;background-image:url('/static/home/images/home_video_background.png'); background-repeat: round;background-size: contain;">

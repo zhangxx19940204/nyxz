@@ -225,7 +225,6 @@ $url_html = "";
 <script src="/static/home/js/script.js"></script>
 <script src="/static/home/js/cityselect.js"></script>
 
-<script type="text/javascript" src="/static/home/js/home_pro_mobile/common.js"></script>
 
 
 
